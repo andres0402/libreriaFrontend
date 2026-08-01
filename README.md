@@ -1,16 +1,50 @@
-# React + Vite
+# Librería — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web hecha con React 19 + Vite que consume la API de la librería (libros, usuarios y préstamos).
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 20 o superior
+- npm
 
-## React Compiler
+## Variables de entorno
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de ejecutar el proyecto **debes crear un archivo `.env` en la raíz del proyecto** (junto a `package.json`). Este archivo no se versiona en el repositorio, por lo que cada quien debe crearlo localmente.
 
-## Expanding the ESLint configuration
+Variables requeridas:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Variable                  | Descripción                                       | Ejemplo                                |
+| ------------------------- | ------------------------------------------------- | -------------------------------------- |
+| `VITE_API_URL_LIBROS`     | URL base del endpoint de libros del backend       | `http://localhost:8080/libros/`     |
+| `VITE_API_URL_USUARIOS`   | URL base del endpoint de usuarios del backend     | `http://localhost:8080/usuarios/`   |
+| `VITE_API_URL_PRESTAMOS`  | URL base del endpoint de préstamos del backend    | `http://localhost:8080/prestamos/`  |
+
+Contenido de ejemplo para el `.env`:
+
+```env
+VITE_API_URL_LIBROS=http://localhost:8080/libros/
+VITE_API_URL_USUARIOS=http://localhost:8080/usuarios/
+VITE_API_URL_PRESTAMOS=http://localhost:8080/prestamos/
+```
+
+Notas:
+
+- Las variables deben empezar con el prefijo `VITE_` para que Vite las exponga al cliente.
+- Incluye la barra final (`/`) en las URLs, tal como en el ejemplo.
+- Si cambias el `.env` con el servidor de desarrollo en ejecución, reinícialo para que tome los nuevos valores.
+
+## Instalación y ejecución
+
+```bash
+npm install
+npm run dev
+```
+
+## Scripts disponibles
+
+| Script            | Descripción                                     |
+| ----------------- | ----------------------------------------------- |
+| `npm run dev`     | Levanta el servidor de desarrollo con HMR       |
+| `npm run build`   | Genera el build de producción                   |
+| `npm run preview` | Sirve localmente el build de producción         |
+| `npm run lint`    | Ejecuta ESLint sobre el proyecto                |
