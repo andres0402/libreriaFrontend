@@ -1,0 +1,74 @@
+.libros-module {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin: 1.5rem;
+  text-align: left;
+}
+
+.libros-header {
+  margin-bottom: 1rem;
+}
+
+.libros-header h2 {
+  margin: 0 0 0.25rem;
+  color: var(--text-h);
+}
+
+.libros-header p {
+  margin: 0;
+  color: var(--text);
+}
+
+.libros-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.libros-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg);
+  font-size: 16px;
+}
+
+.libros-table th,
+.libros-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.libros-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.libros-table th {
+  background: var(--table-head-bg);
+  color: var(--text-h);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.libros-table td {
+  color: var(--text);
+}
+
+.libros-table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+.libros-table .col-acciones {
+  width: 1%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.libros-empty {
+  text-align: center;
+  color: var(--text);
+  font-style: italic;
+}

@@ -1,0 +1,74 @@
+.prestamos-module {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin: 1.5rem;
+  text-align: left;
+}
+
+.prestamos-header {
+  margin-bottom: 1rem;
+}
+
+.prestamos-header h2 {
+  margin: 0 0 0.25rem;
+  color: var(--text-h);
+}
+
+.prestamos-header p {
+  margin: 0;
+  color: var(--text);
+}
+
+.prestamos-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.prestamos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg);
+  font-size: 16px;
+}
+
+.prestamos-table th,
+.prestamos-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.prestamos-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prestamos-table th {
+  background: var(--table-head-bg);
+  color: var(--text-h);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.prestamos-table td {
+  color: var(--text);
+}
+
+.prestamos-table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+.prestamos-table .col-acciones {
+  width: 1%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.prestamos-empty {
+  text-align: center;
+  color: var(--text);
+  font-style: italic;
+}

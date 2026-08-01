@@ -1,0 +1,74 @@
+.usuarios-module {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin: 1.5rem;
+  text-align: left;
+}
+
+.usuarios-header {
+  margin-bottom: 1rem;
+}
+
+.usuarios-header h2 {
+  margin: 0 0 0.25rem;
+  color: var(--text-h);
+}
+
+.usuarios-header p {
+  margin: 0;
+  color: var(--text);
+}
+
+.usuarios-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.usuarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg);
+  font-size: 16px;
+}
+
+.usuarios-table th,
+.usuarios-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.usuarios-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.usuarios-table th {
+  background: var(--table-head-bg);
+  color: var(--text-h);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.usuarios-table td {
+  color: var(--text);
+}
+
+.usuarios-table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+.usuarios-table .col-acciones {
+  width: 1%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.usuarios-empty {
+  text-align: center;
+  color: var(--text);
+  font-style: italic;
+}
