@@ -2,11 +2,6 @@
 
 Aplicación web hecha con React 19 + Vite que consume la API de la librería (libros, usuarios y préstamos).
 
-## Requisitos
-
-- Node.js 20 o superior
-- npm
-
 ## Variables de entorno
 
 Antes de ejecutar el proyecto **debes crear un archivo `.env` en la raíz del proyecto** (junto a `package.json`). Este archivo no se versiona en el repositorio, por lo que cada quien debe crearlo localmente.
